@@ -4,68 +4,81 @@
     box-sizing: border-box;
 }
 
-.cart-display{
+.inputtype{
+    width: "25px"; 
+    height: "30px";
+    border: "none"; 
+    text-align: "center"
+}
+
+.cartproducts{
+    height: 800px;
+    border-bottom: 1px solid black;
+}
+
+.cart{
     width: 100%;
-    height: auto;
-    background-color: blanchedalmond;
-    padding: 10px;
-    display: flex;
-    gap: 10px;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: scroll;
-}
-
-.cart-products{
-    width: 250px;
-    height: 350px;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-
-.img img{
-    width: 100%;
-    height: 150px;
-    border-bottom: 1px solid grey;
-}
-
-.cart-content{
-    margin: 10px;
-    text-align: center;
-}
-
-
-.cart-btn{
-    text-align: center;
-}
-
-.cart-btn button{
-    width: 100px;
-    height: 40px;
+    height: 200px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(233, 165, 76);
+    margin-bottom: 3px;
+    background-color: rgb(74, 148, 231);
+    color: #FFFFFF;
+    display: flex;
+    position: relative;
+}
+
+img{
+    width: 75px;
+    height: 100px;
+    margin: 5px;
+}
+
+.cartdetails{
+    display: flex;
+}
+
+span{
+    color: rgb(231, 129, 11);
     font-weight: bold;
 }
 
-.cartitems{
-    position: fixed;
-}
-
-.selected-items{
-    width: 100%;
-    height: 80px;
-    border: 1px solid rgb(198, 194, 194);
-    margin-bottom: 5px;
+.qty{
     display: flex;
+    gap: 10px;
 }
 
-.selected-image{
-    margin-right: 10px;
+.qty input{
+    width: 50px;
+    height: 30px;
+    text-align: center;
 }
 
-.selected-items img{
-    width: 60px;
-    height: 60px;
+.cartbtn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+}
+.total{
+    display: flex;
+    gap: 150px;
+    margin-top: 5px;    
+}
+
+.total button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: green;
+    color: #FFFFFF;
+}
+
+.removecart{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgb(238, 67, 67);
+    color: #FFFFFF;
+    font-size: 14px;
 }
