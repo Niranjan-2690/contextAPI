@@ -18,7 +18,7 @@ function App(){
   //-----------------Fetching products data-------------------
 
   useEffect(()=>{
-    fetch("http://localhost:5173/products.json")
+    fetch("https://guvi-context-api.netlify.app/products.json")
     .then((response)=>response.json())
     .then((result)=>{
       if(result.datas && result.datas.length > 0){
